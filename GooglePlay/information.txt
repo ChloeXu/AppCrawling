@@ -1,0 +1,13 @@
+__author__ = 'xuzhuqing'
+
+The 5 sub categories under Education Category in Google Play are:
+
+Apps for Teacher
+
+Back to school Favorite
+
+STEM made fun
+
+Little Book Worms
+
+Math Whizzes
