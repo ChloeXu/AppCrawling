@@ -3,7 +3,6 @@ __author__ = 'xuzhuqing'
 import re
 import urllib2
 
-app_info = "https://itunes.apple.com/lookup?id=490217893"
 
 response = urllib2.urlopen("https://itunes.apple.com/us/genre/ios-education/id6017?mt=8")
 
