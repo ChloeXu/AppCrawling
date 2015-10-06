@@ -26,7 +26,7 @@ for item in app_ids:
 
 # record time of crawling
 with open("app_list_education_google.txt", "a") as f:
-    f.write('\n' + '*'*25 + "\n" + "Date Recorded starts at: \n" + str(date) + str(current_time) + "\n" + "\n")
+    f.write('\n' + '*'*25 + "\n" + "Date Recorded starts at: \n" + str(date) + ' ' + str(current_time) + "\n" + "\n")
 
 # write in files based on subcategory
 i = 0
@@ -41,7 +41,7 @@ for item in app_list:
     i += 1
 
 with open("app_list_education_google.txt", "a") as f:
-    f.write("\n" + "Date Recorded ends at: \n" + str(date) + str(current_time) + "\n" + '*'*25 + "\n")
+    f.write("\n" + "Date Recorded ends at: \n" + str(date) + ' ' + str(current_time) + "\n" + '*'*25 + "\n")
 
 # print out status
 print 'Done!'

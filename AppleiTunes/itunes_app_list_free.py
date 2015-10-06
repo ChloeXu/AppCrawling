@@ -1,6 +1,7 @@
 __author__ = 'xuzhuqing'
 
 import re
+import time
 import urllib2
 
 
@@ -8,12 +9,16 @@ response = urllib2.urlopen("http://www.apple.com/itunes/charts/free-apps/")
 
 url_html = response.read()
 
-
+date = time.strftime("%x")
+current_time = time.strftime("%X")
 app_id = []
 
 matchObj = re.compile(r'(?<=id)\d{9}')
 
 app_id = matchObj.findall(url_html)
+
+with open("free_list.txt", "a") as f:
+    f.write("\n" + "Date Recorded starts at: \n" + str(date) + ' ' + str(current_time) + "\n" + '*'*25 + "\n")
 
 
 app_list = []
@@ -26,6 +31,10 @@ for item in app_id:
 for item in app_list:
     with open("free_list.txt", "a") as f:
         f.write(str(item)+'\n')
+
+with open("free_list.txt", "a") as f:
+    f.write("\n" + "Date Recorded ends at: \n" + str(date) + ' ' + str(current_time) + "\n" + '*'*25 + "\n")
+
 
 print len(app_list)
 print 'Done!'

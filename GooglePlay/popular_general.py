@@ -25,7 +25,7 @@ for item in app_ids:
 
 # record time of crawling
 with open("general_google_app_list.txt", "a") as f:
-    f.write('\n' + '*'*25 + "\n" + "Date Recorded starts at: \n" + str(date) + str(current_time) + "\n" + "\n")
+    f.write('\n' + '*'*25 + "\n" + "Date Recorded starts at: \n" + str(date) + ' ' + str(current_time) + "\n" + "\n")
 
 
 for item in app_list:
@@ -33,7 +33,7 @@ for item in app_list:
         f.write(item + "\n")
 
 with open("general_google_app_list.txt", "a") as f:
-    f.write("\n" + "Date Recorded ends at: \n" + str(date) + str(current_time) + "\n" + '*'*25 + "\n")
+    f.write("\n" + "Date Recorded ends at: \n" + str(date) + ' ' + str(current_time) + "\n" + '*'*25 + "\n")
 
 # print out status
 print 'Done!'
