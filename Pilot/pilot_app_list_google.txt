@@ -1,0 +1,12 @@
+com.aim.racing
+com.yodo1.crossyroad
+com.ludia.jurassicworld
+com.ea.game.pvzfree_row
+com.supercell.clashofclans
+com.rovio.angrybirds
+com.ea.game.simpsons4_na
+com.prettysimple.criminalcaseandroid
+com.blizzard.wtcg.hearthstone
+com.glu.contractkiller3
+com.rockstargames.gtasa
+com.scopely.headshot
